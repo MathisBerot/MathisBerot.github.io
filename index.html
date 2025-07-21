@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mathis Bérot</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header avec Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: var(--jaune-beige);">
+      <div class="container d-flex justify-content-between align-items-center">
+
+        <!-- Rubriques au centre -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about">Me découvrir</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Expérience pro</a></li>
+            <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Toggle burger pour mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <main class="container my-5 p-5">
+    <!-- Présentation -->
+    <section id="presentation" class="mb-5">
+      <div class="row align-items-center">
+        <!-- Texte à gauche -->
+        <div class="col-md-8">
+          <h1 class="display-2 fw-bold mb-3">Mathis Bérot</h1>
+          <h3 class="h4 mb-4">Étudiant en BUT Informatique</h3>
+          <a href="#contact" class="btn btn-primary mb-4">Me contacter</a>
+        </div>
+        <!-- Photo à droite -->
+        <div class="col-md-4 text-center">
+          <img src="images/photoPro.png" class="img-fluid rounded-circle" alt="Mathis Bérot" style="max-width: 300px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="mb-5">
+      <h2>À propos de moi</h2>
+      <div class="card shadow-sm border-left">
+        <div class="card-body">
+      <p class="text-justify">
+        Je m’appelle Mathis, j’ai 19 ans et je suis actuellement en troisième année de BUT Informatique à 
+        l’Université de Caen. Passionné par l’informatique, j’ai choisi de me spécialiser dans le développement 
+        d’applications, notamment web, un domaine où créativité et logique se mêlent.
+      </p>
+      <p class="text-justify">
+        Curieux et motivé, je me tiens informé des dernières technologies et des nouvelles pratiques du secteur. 
+        Je porte un intérêt particulier au développement front-end, car j'aime créer des interfaces modernes et 
+        intuitives, mais je prends aussi plaisir à explorer le back-end afin de pouvoir développer une application 
+        de A à Z.
+      </p>
+      <p class="text-justify">
+        Je suis actuellement à la recherche d’une alternance pour mettre en pratique mes compétences et contribuer 
+        activement à des projets concrets au sein d’une équipe dynamique. Mon objectif est de progresser aux côtés 
+        de professionnels expérimentés et de relever des défis variés, tout en apportant mon sérieux, ma créativité 
+        et ma polyvalence.
+      </p>
+      </div>
+      </div>
+    </section>
+
+    <!-- Centres d'intérêt -->
+    <section id="interests" class="mb-5">
+      <h2>Centres d'intérêt</h2>
+      <div class="row g-4">
+          <!-- Carte 1 -->
+          <div class="col-md-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+              <div class="flip-card-front text-center">
+                  <img src="images/pingpong.jpg" class="img-fluid mb-2" alt="Intérêt 1">
+                  <h5>Sport</h5>
+              </div>
+              <div class="flip-card-back text-justify p-3">
+                  <p class="flip-card-back-text">
+                    Le sport occupe une place importante dans ma vie. J’ai notamment pratiqué le tennis de table 
+                    pendant huit ans. Pour rester actif et entretenir ma condition physique, je pratique régulièrement 
+                    la course à pied.
+                  </p>
+              </div>
+              </div>
+          </div>
+          </div>
+
+          <!-- Carte 2 -->
+          <div class="col-md-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+              <div class="flip-card-front text-center">
+                  <img src="images/astronomie.jpg" class="img-fluid mb-2" alt="Intérêt 2">
+                  <h5>Astronomie</h5>
+              </div>
+              <div class="flip-card-back text-justify p-3">
+                  <p class="flip-card-back-text">
+                    L’astronomie me fascine par sa complexité et son immensité. J’ai longtemps envisagé d’en faire 
+                    mon métier avant de me tourner vers l’informatique. J’espère pouvoir allier ces deux passions 
+                    à l’avenir.
+                  </p>
+              </div>
+              </div>
+          </div>
+          </div>
+
+          <!-- Carte 3 -->
+          <div class="col-md-4">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+              <div class="flip-card-front text-center">
+                  <img src="images/3d.png" class="img-fluid mb-2" alt="Intérêt 3">
+                  <h5>Modélisation 3D</h5>
+              </div>
+              <div class="flip-card-back text-justify p-3">
+                  <p class="flip-card-back-text">
+                    Depuis deux ans, je me passionne pour la modélisation 3D. Cela me permet d'exprimer ma créativité 
+                    et de développer mon imagination. Je partage mes meilleurs réalisations sur instagram (
+                    <a href="https://www.instagram.com/mator.3d/" target="_blank" class="lien-insta">@mator.3d</a>
+                    ).
+                </p>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours scolaire -->
+    <section id="education" class="mb-5">
+    <h2>Parcours scolaire</h2>
+
+    <div class="timeline">
+        <div class="timeline-item card shadow-sm border-left">
+        <div class="timeline-content">
+            <h5 class="fw-bold mb-1">Université de Caen</h5>
+            <p class="mb-1">BUT Informatique</p>
+            <p>Parcours A : Conception et développement d'applications</p>
+            <p class="mb-1">2023 - 2026</p>
+        </div>
+        </div>
+
+        <div class="timeline-item card shadow-sm border-left">
+        <div class="timeline-content">
+            <h5 class="fw-bold mb-1">Lycée Alexis de Tocqueville</h5>
+            <p class="mb-1">Baccalauréat Général</p>
+            <p>Spécialités : Mathématiques, Numérique et Sciences Informatiques.</p>
+            <p class="mb-1">2020 - 2023</p>
+
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Expérience Pro -->
+    <section id="experience" class="mb-5">
+    <h2>Expérience professionnelle</h2>
+
+    <div class="accordion border-left" id="accordionExperience">
+    <!-- Item 1 -->
+    <div class="accordion-item">
+        <div class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+            <!-- Logo -->
+            <img src="images/logo/academieNormandie.png" alt="Rectorat"
+                class="img-fluid me-3" style="max-width: 50px; border-radius: 4px;">
+            <!-- Titres -->
+            <div>
+            <h6 class="mb-0">Stagiaire développeur web</h6>
+            <small class="text-muted">Rectorat de l'académie de Normandie</small><br>
+            <small class="text-muted">Avril 2025 - Juin 2025</small>
+            </div>
+        </button>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+        <div class="accordion-body">
+            <p class="text-justify">
+                Pendant mon stage de deuxième année de BUT Informatique, j’ai réalisé la refonte complète d'une 
+                application interne, qui sert à recenser et suivre les domaines d’activité des postes au sein 
+                de l’académie. J’ai modernisé l’outil pour le connecter à une nouvelle base de données 
+                nationale, j'ai également optimisé ses performances et sécurisé la gestion des données grâce 
+                à une synchronisation automatique et une architecture claire sous Symfony 6.
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="accordion-item">
+        <div class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+            <!-- Logo -->
+            <img src="images/logo/intermarche.png" alt="Intermarché"
+                class="img-fluid me-3" style="max-width: 50px;">
+            <!-- Titres -->
+            <div>
+            <h6 class="mb-0">Caissier</h6>
+            <small class="text-muted">Intermarché Tourlaville</small><br>
+            <small class="text-muted">Octobre 2024 - Maintenant</small>
+            </div>
+        </button>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+        <div class="accordion-body">
+            <p class="text-justify">
+                Il s’agit d’un job étudiant à temps partiel, que j’occupe pendant les vacances scolaires 
+                et les week-ends. Mes principales missions sont l’encaissement, la mise en rayon et le facing.
+            </p>
+            
+        </div>
+        </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="accordion-item">
+        <div class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed d-flex align-items-center" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+            <!-- Logo -->
+            <img src="images/logo/prixmiam.png" alt="Prix'miam"
+                class="img-fluid me-3" style="max-width: 50px;">
+            <!-- Titres -->
+            <div>
+            <h6 class="mb-0">Équipier commercial</h6>
+            <small class="text-muted">Prix'miam Tourlaville</small><br>
+            <small class="text-muted">Avril 2024 - Septembre 2024</small>
+            </div>
+        </button>
+        </div>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+        <div class="accordion-body">
+            <p class="text-justify">
+            Il s’agissait d’un job étudiant à temps partiel, effectué pendant les vacances scolaires et 
+            les week-ends. Mes principales missions  étaient la mise en rayon, la gestion des stocks, 
+            l’encaissement, la réception des arrivages, la gestion des réseaux sociaux et la relation client.
+            </p>    
+        </div>
+        </div>
+    </div>
+    </div>
+
+    </section>
+
+
+    <!-- Compétences -->
+    <section id="competences" class="mb-5">
+    <h2>Compétences</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4 ">
+        <div class="card h-100 shadow-sm border-left">
+            <div class="card-body">
+            <h5>Développement web</h5>
+            <p>HTML, CSS, JavaScript, PHP</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-left">
+            <div class="card-body">
+            <h5>Programmation</h5>
+            <p>Python, Java, C, C#, Kotlin</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-left">
+            <div class="card-body">
+            <h5>Bases de données</h5>
+            <p>SQL, PL/SQL, UML</p>
+            </div>
+        </div>
+        </div>
+
+            <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-left">
+            <div class="card-body">
+            <h5>Frameworks</h5>
+            <p>Laravel, Symfony, Vue.js</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-left">
+            <div class="card-body">
+            <h5>Outils</h5>
+            <p>Git, Figma, Blender</p>
+            </div>
+        </div>
+        </div>
+
+            <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-left">
+            <div class="card-body">
+            <h5>Autres</h5>
+            <p>Travail en équipe, gestion de projet</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="mb-5">
+      <h2>Portfolio</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projet1.jpg" class="card-img-top" alt="Projet 1">
+            <div class="card-body">
+              <h5>Projet 1</h5>
+              <p class="card-text">Description du projet, techno utilisée, rôle joué.</p>
+              <a href="#" class="btn btn-primary">Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projet2.jpg" class="card-img-top" alt="Projet 2">
+            <div class="card-body">
+              <h5>Projet 2</h5>
+              <p class="card-text">Courte description du deuxième projet.</p>
+              <a href="#" class="btn btn-primary">Voir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-5">
+    <h2>Contact</h2>
+    <div class="card p-4 shadow-sm border-left">
+        <div class="row align-items-center">
+        <!-- Coordonnées à gauche -->
+            <div class="col-md-8">
+            <p><strong>Téléphone :</strong> <a href="tel:+33636416772">06 36 41 67 72</a></p>
+            <p><strong>Email :</strong> <a href="mailto:berotmathis@gmail.com">berotmathis@gmail.com</a></p>
+            </div>
+
+            <!-- LinkedIn à droite -->
+            <div class="col-md-4 text-md-end">
+            <a href="https://www.linkedin.com/in/toto/" target="_blank">
+                <img src="images/logo/linkedin.png" alt="LinkedIn" style="width: 60px; border-radius: 10px;">
+            </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+  </main>    
+
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+      &copy; 2025 Mathis Bérot - Tous droits réservés
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
