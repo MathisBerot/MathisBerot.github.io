@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6, strong{
 }
 
 h2{
+  font-size: 220%;
   margin-bottom: 18px;
 }
 
@@ -206,4 +207,20 @@ header {
 
 .lien-insta:hover{
   color: rgb(113, 176, 198);
+}
+
+
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .card-body {
+  flex-grow: 1;
 }
