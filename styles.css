@@ -1,6 +1,6 @@
 :root {
   --bleu-fonce: #002b5c;
-  --jaune-beige: #ffffff; /* clair et chaleureux */
+  --jaune-beige: #ffffff; /* blanc */
   --orange: #ed9716;
 }
 
@@ -13,7 +13,6 @@ body {
 h1, h2, h3, h4, h5, h6, strong{
   color: var(--bleu-fonce);
   font-weight: 700;
-  /**/
 }
 
 h2{
@@ -65,7 +64,7 @@ footer {
 /* Flip Card container */
 .flip-card {
   background-color: transparent;
-  perspective: 1000px; /* profondeur */
+  perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -131,9 +130,6 @@ footer {
   outline: none;
 }
 
-
-
-/* === Timeline alignée avec encadrés === */
 .timeline {
   position: relative;
   padding-left: 40px;
@@ -175,7 +171,7 @@ footer {
   margin-bottom: 0.2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .timeline {
     padding-left: 20px;
   }
@@ -198,7 +194,7 @@ header {
 }
 
 .navbar-hidden {
-  top: -100px; /* Ajuste selon la hauteur du header */
+  top: -100px;
 }
 
 .lien-insta{
@@ -226,7 +222,7 @@ header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #presentation .col-md-8 {
     text-align: center;
   }
@@ -281,7 +277,7 @@ header {
 
 
 /* Style du menu déroulé pour mobile */
-@media (max-width: 991.98px) {
+@media (max-width: 1000px) {
   .navbar-collapse {
     background-color: var(--jaune-beige);
     padding: 1rem 0;
@@ -297,7 +293,7 @@ header {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -308,7 +304,6 @@ header {
     z-index: 999;
   }
 
-  /* Facultatif : une petite transition */
   .navbar-collapse.collapsing,
   .navbar-collapse.show {
     transition: height 0.3s ease;
