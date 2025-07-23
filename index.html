@@ -14,32 +14,38 @@
 
   <!-- Header avec Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg" style="background-color: var(--jaune-beige);">
-      <div class="container d-flex justify-content-between align-items-center">
+  <nav class="navbar navbar-expand-lg" style="background-color: var(--jaune-beige);">
+    <div class="container d-flex justify-content-between align-items-center">
 
-        <!-- Rubriques au centre -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#about">Me découvrir</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Expérience pro</a></li>
-            <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Toggle burger pour mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarContent" aria-controls="navbarContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Liens centraux pour desktop -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">Me découvrir</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Expérience pro</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </nav>
-  </header>
+
+      <!-- Nouveau bouton burger custom -->
+      <button id="menu-toggle" class="custom-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+  data-bs-target="#navbarContent" aria-controls="navbarContent"
+  aria-expanded="false" aria-label="Toggle navigation">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+
+
+    </div>
+  </nav>
+</header>
+
 
   <!-- Contenu principal -->
-  <main class="container my-5 p-5">
+  <main class="container my-md-5 p-md-5 p-3">
     <!-- Présentation -->
     <section id="presentation" class="mb-5">
       <div class="row align-items-center">
@@ -47,10 +53,10 @@
         <div class="col-md-8">
           <h1 class="display-2 fw-bold mb-3">Mathis Bérot</h1>
           <h3 class="h4 mb-4">Étudiant en BUT Informatique</h3>
-          <a href="#contact" class="btn btn-primary mb-4">Me contacter</a>
+          <a href="#contact" class="btn btn-primary mb-4 d-none d-md-inline-block">Me contacter</a>
         </div>
         <!-- Photo à droite -->
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 mt-4 text-center">
           <img src="images/photoPro.png" class="img-fluid rounded-circle" alt="Mathis Bérot" style="max-width: 300px;">
         </div>
       </div>

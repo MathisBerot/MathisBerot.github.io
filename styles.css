@@ -224,3 +224,93 @@ header {
 .project-card .card-body {
   flex-grow: 1;
 }
+
+
+@media (max-width: 768px) {
+  #presentation .col-md-8 {
+    text-align: center;
+  }
+
+  #presentation .btn {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+/* Masquer le bouton par défaut de Bootstrap */
+.custom-toggler {
+  width: 36px;   /* plus gros */
+  height: 30px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.custom-toggler:focus {
+  outline: none;
+}
+
+.custom-toggler .bar {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--bleu-fonce);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: 4px 2px;
+}
+
+/* Quand menu est ouvert, on ajoute une classe `.open` au bouton (en JS) */
+.custom-toggler.open .bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.custom-toggler.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-toggler.open .bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+
+/* Style du menu déroulé pour mobile */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: var(--jaune-beige);
+    padding: 1rem 0;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 1rem;
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--jaune-beige);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  /* Facultatif : une petite transition */
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    transition: height 0.3s ease;
+  }
+}
