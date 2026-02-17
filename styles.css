@@ -56,6 +56,23 @@ a:hover {
   background-color: var(--jaune-beige);
 }
 
+.btn-project {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 6px 14px;
+  float: right;
+}
+
+.btn-project:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+  background-color: var(--jaune-beige);
+}
+
 footer {
   background-color: var(--bleu-fonce);
   color: #fff;
@@ -69,7 +86,7 @@ footer {
 .accordion-button:not(.collapsed) {
     background-color: transparent;
     box-shadow: none;
-    color: inherit; /* Garde le texte normal */
+    color: inherit;
 }
 
 .accordion-button:focus {
